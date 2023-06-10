@@ -23,6 +23,6 @@ if place:
                       "Snow": "images/snow.png"}
             sky_conditions = [value["weather"][0]["main"] for value in filtered_data]
             image_paths = [images[sky_condition] for sky_condition in sky_conditions]
-            image(image_paths, width=115)
+            image(image_paths, width=80)
     except KeyError:
         info("Place does not exist / Place not found")
